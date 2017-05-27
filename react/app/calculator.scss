@@ -1,0 +1,67 @@
+$button-size: 57px;
+
+.calculator {
+  width: $button-size * 4;
+  height: 320px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  .expression {
+    padding: 2px;
+    height: 80px;
+    background-color: #666;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .expression-enter {
+      opacity: 0.01;
+
+      &.expression-enter-active {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+      }
+    }
+
+    .expression-leave {
+      opacity: 1;
+      &.expression-leave-active {
+        opacity: 0.01;
+        transition: opacity 300ms ease-in;
+      }
+    }
+
+    .text {
+      font-size: 3em;
+    }
+  }
+
+  .keyboard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .row {
+      display: flex;
+
+      .button {
+        width: $button-size;
+        height: 47px;
+        box-sizing: border-box;
+        background-color: #e0e0e0;
+        color: black;
+        border: 1px solid #666;
+        cursor: pointer;
+
+        .text {
+          line-height: 47px;
+        }
+      }
+
+      .spread {
+        flex-grow: 1;
+      }
+    }
+  }
+}
