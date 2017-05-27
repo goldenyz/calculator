@@ -1,0 +1,49 @@
+$button-size: 57px;
+
+.calculator {
+  width: $button-size * 4;
+  height: 320px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  .expression {
+    padding: 2px;
+    height: 80px;
+    background-color: #666;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .text {
+      font-size: 3em;
+    }
+  }
+
+  .keyboard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .row {
+      display: flex;
+
+      .button {
+        width: $button-size;
+        height: 47px;
+        box-sizing: border-box;
+        background-color: #e0e0e0;
+        color: black;
+        border: 1px solid #666;
+
+        .text {
+          line-height: 47px;
+        }
+      }
+
+      .spread {
+        flex-grow: 1;
+      }
+    }
+  }
+}
