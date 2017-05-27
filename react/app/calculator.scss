@@ -15,6 +15,23 @@ $button-size: 57px;
     justify-content: flex-end;
     align-items: flex-end;
 
+    .expression-enter {
+      opacity: 0.01;
+
+      &.expression-enter-active {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+      }
+    }
+
+    .expression-leave {
+      opacity: 1;
+      &.expression-leave-active {
+        opacity: 0.01;
+        transition: opacity 300ms ease-in;
+      }
+    }
+
     .text {
       font-size: 3em;
     }
@@ -35,6 +52,7 @@ $button-size: 57px;
         background-color: #e0e0e0;
         color: black;
         border: 1px solid #666;
+        cursor: pointer;
 
         .text {
           line-height: 47px;
