@@ -1,0 +1,54 @@
+{
+  "name": "react-calculator",
+  "version": "1.0.0",
+  "description": "This project implement the calculator by react. Using react-transition-group for the animation.",
+  "main": "index.js",
+  "scripts": {
+    "init": "npm update",
+    "start": "npm run init && npm run start-webpack-server",
+    "start-webpack-server": "webpack-dev-server --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goldenyz/calculator/react"
+  },
+  "keywords": [
+    "calculator",
+    "react",
+    "react-transition-group"
+  ],
+  "author": "Allen Yang",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-transition-group": "^1.1.3",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
+    "case-sensitive-paths-webpack-plugin": "*",
+    "cross-env": "*",
+    "css-loader": "*",
+    "del-cli": "*",
+    "eslint-loader": "*",
+    "file-loader": "*",
+    "html-webpack-plugin": "*",
+    "node-sass": "*",
+    "postcss-loader": "*",
+    "sass-loader": "*",
+    "source-map-loader": "*",
+    "style-loader": "*",
+    "url-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+}

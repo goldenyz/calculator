@@ -1,0 +1,16 @@
+# npm
+node_modules/
+
+# logs
+logs
+*.log
+
+# build output
+dist/
+# config file
+/config.json
+
+# IDE
+# - vscode
+.vscode/*
+!.vscode/settings.json
